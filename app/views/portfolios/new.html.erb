@@ -1,0 +1,8 @@
+<h1>Create a new Portfolio</h1>
+
+<%= simple_form_for [@portfolio] do |f| %>
+  <%= f.association :stock %>
+  <%# <%= f.input :quantity  %>
+  <%# NEED TO FIX THIS FORM SO THEY CAN PUT A QUANTITY AND MAYBE THE PRICE WHEN THEY BOUGHT IT IF NOT THE SAME AS THE CURRENT PRICE %>
+  <%= f.button :submit %>
+<% end %>
